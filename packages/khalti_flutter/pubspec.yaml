@@ -16,7 +16,7 @@ dependencies:
   flutter_svg: ^1.1.6
   intl: ^0.17.0
   khalti:
-    path: ../khalti/
+    path: ../khalti
   url_launcher: ^6.1.6
 
 dev_dependencies:
