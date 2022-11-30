@@ -206,6 +206,16 @@ class PaymentSuccessModel {
     );
   }
 
+    Map<String, dynamic> toJson() => {
+        "idx": idx,
+        "amount": amount,
+        "mobile": mobile,
+        "productIdentity": productIdentity,
+        "productName": productName,
+        "token": token,
+        "additionalData": additionalData,
+    };
+
   @override
   String toString() {
     return 'PaymentSuccessModel{idx: $idx, amount: $amount, mobile: $mobile, productIdentity: $productIdentity, productName: $productName, token: $token, additionalData: $additionalData}';
