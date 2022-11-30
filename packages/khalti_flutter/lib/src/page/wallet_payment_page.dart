@@ -125,7 +125,7 @@ class _WalletPaymentPageState extends State<WalletPaymentPage>
         message: context.loc.initiatingPayment,
       );
 
-      try {
+      // try {
         final response = await Khalti.service.initiatePayment(
           request: PaymentInitiationRequestModel(
             mobile: _mobile!,
@@ -164,15 +164,15 @@ class _WalletPaymentPageState extends State<WalletPaymentPage>
             );
           },
         );
-      } catch (e) {
-        _showRemainingAttempts(e);
-        Navigator.pop(context);
-        showErrorDialog(
-          context,
-          error: e,
-          onPressed: () => Navigator.pop(context),
-        );
-      }
+      // } catch (e) {
+      //   _showRemainingAttempts(e);
+      //   Navigator.pop(context);
+      //   showErrorDialog(
+      //     context,
+      //     error: e,
+      //     onPressed: () => Navigator.pop(context),
+      //   );
+      // }
     }
   }
 
